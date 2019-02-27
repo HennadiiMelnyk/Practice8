@@ -19,6 +19,7 @@ public class Demo {
 
         DBManager dbManager = DBManager.getInstance();
 
+
         // Part 1
         dbManager.insertUser(User.createUser("petrov"));
         dbManager.insertUser(User.createUser("obama"));

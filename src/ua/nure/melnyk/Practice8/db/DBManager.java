@@ -48,6 +48,7 @@ public class DBManager {
     ///////////////////////////////
     // singleton
 
+
     private static DBManager instance; // == null
 
     public static synchronized DBManager getInstance() {
@@ -76,7 +77,7 @@ public class DBManager {
             if (pstmt.executeUpdate() > 0) {
                 ResultSet rs = pstmt.getGeneratedKeys();
                 if (rs.next()) {
-                    user.setId(rs.getInt(1));
+                        user.setId(rs.getInt(1));
                 }
             }
             connection.commit();
